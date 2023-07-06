@@ -1,10 +1,10 @@
-.main-nav{
-    
+nav.main-nav{
+    padding-left: 40px;
     min-height: 70px;
 }
 
 .nav-logo-text, .nav-logo-text:hover {
-    padding-left: 40px;
+    
     color: #fff;
 }
 
