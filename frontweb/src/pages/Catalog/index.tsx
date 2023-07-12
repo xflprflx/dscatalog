@@ -2,6 +2,7 @@ import { Product } from 'types/product';
 import ProductCard from 'components/ProductCard';
 
 const Catalog = () => {
+  
   const product: Product = {
     id: 2,
     name: 'Smart TV',
