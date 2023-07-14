@@ -13,6 +13,7 @@ import javax.validation.constraints.Size;
 
 import com.devsuperior.dscatalog.entities.Category;
 import com.devsuperior.dscatalog.entities.Product;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class ProductDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
