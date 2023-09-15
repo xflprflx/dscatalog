@@ -9,7 +9,7 @@ import { AxiosParams } from 'types/vendor/axios';
 import { BASE_URL } from 'util/requests';
 
 import './styles.css';
-import { response } from 'msw';
+
 
 const Catalog = () => {
   const [page, setPage] = useState<SpringPage<Product>>();
@@ -37,7 +37,7 @@ const Catalog = () => {
         {page?.content.map((product) => {
           return (
             <div className="col-sm-6 col-lg-4 col-xl-3" key={product.id}>
-              <Link to="/products/1">
+              <Link to={`/products/${product.id}`}>
                 <ProductCard product={product} />
               </Link>
             </div>
