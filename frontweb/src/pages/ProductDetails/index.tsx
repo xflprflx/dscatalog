@@ -7,23 +7,23 @@ import { Product } from 'types/product';
 import { BASE_URL } from 'util/requests';
 
 import './styles.css';
-
+//1
 type UrlParams = {
   productId: string;
 }
 
 const ProductDetails = () => {
-
+  //2
   const { productId } = useParams<UrlParams>();
 
   const [product, setProduct] = useState<Product>();
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/products/${productId}`)
+    axios.get(`${BASE_URL}/products/${productId}`)//3
       .then(response => {
         setProduct(response.data);
       });
-  }, [productId]);
+  }, [productId]);//4
 
   return (
     <div className="product-details-container">
