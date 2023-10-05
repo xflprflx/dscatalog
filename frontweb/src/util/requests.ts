@@ -1,5 +1,4 @@
 import axios from "axios";
-import { type } from "os";
 import qs from 'qs';
 
 export const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? 'http://localhost:8080';
