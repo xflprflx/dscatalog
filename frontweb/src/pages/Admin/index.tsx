@@ -12,13 +12,13 @@ const Admin = () => {
       <Navbar />
       <div className="admin-content">
         <Switch>
-          <PrivateRoute path="/admin/products">
+          <PrivateRoute path="/admin/products" >
             <h1>Product CRUD</h1>
           </PrivateRoute>
-          <PrivateRoute path="/admin/categories">
+          <PrivateRoute path="/admin/categories" >
             <h1>Categorie CRUD</h1>
           </PrivateRoute>
-          <PrivateRoute path="/admin/users">
+          <PrivateRoute path="/admin/users" roles={['ROLE_ADMIN']}>
             <Users />
           </PrivateRoute>
         </Switch>
