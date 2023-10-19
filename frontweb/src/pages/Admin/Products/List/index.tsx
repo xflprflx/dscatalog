@@ -1,7 +1,7 @@
-import ProductCrudCard from 'components/ProductCrudCard';
+import ProductCrudCard from '../ProductCrudCard';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
-import { Link } from 'react-router-dom';
 
 const List = () => {
   const product = {
